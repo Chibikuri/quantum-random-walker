@@ -18,16 +18,18 @@ class cal_random:
                 y = y
             else:
                 y = y - 1
-            y_data.append(y)
             x = x + 1
-        try:
-            print(x, y, y_data.index(0))
-            #plt.plot(x_data, y_data, color = "blue")
-            #plt.plot([0, n], [0, 0], linestyle="dashed")
-            #plt.show()
-            return y_data, n
-        except:
-            print(x, y)
+            y_data.append(y)
+        #if 0 is not y_data:
+        #    print(x, y, 0)
+        #else:
+        #    print(x, y, y_data.index(0))
+        #plt.plot(x_data, y_data, color = "blue")
+        #plt.plot([0, n], [0, 0], linestyle="dashed")
+        #plt.show()
+        return y_data
+
+
 
 if __name__ == "__main__":
     cal_random.random_walker()

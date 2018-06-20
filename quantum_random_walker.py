@@ -1,8 +1,10 @@
 from qis_sim import Quantum_culc as qcl
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
+import numpy as np
 
 
 class random_walker:
+    @classmethod
     def random_walk_sim():
         x = 0
         y = 0
@@ -19,10 +21,12 @@ class random_walker:
                 y = y - 1
             x = x + 1
             y_value.append(y)
-        print(x, y, y_value.index(0))
-        plt.plot(x_value, y_value, color = "red")
-        plt.plot([0, n], [0, 0], color = "blue", linestyle = "dashed")
-        plt.show()
+        #print(x, y, y_value.index(0))
+        #plt.plot(x_value, y_value, color = "red")
+        #plt.plot([0, n], [0, 0], color = "blue", linestyle = "dashed")
+        #plt.show()
+        return np.mean(y_valu)
+
 
 
 if __name__ == "__main__":
