@@ -5,7 +5,7 @@ import numpy as np
 
 class random_walker:
     @classmethod
-    def random_walk_sim():
+    def random_walk_sim(self):
         x = 0
         y = 0
         n = 1000
@@ -25,7 +25,7 @@ class random_walker:
         #plt.plot(x_value, y_value, color = "red")
         #plt.plot([0, n], [0, 0], color = "blue", linestyle = "dashed")
         #plt.show()
-        return np.mean(y_valu)
+        return np.mean(y_value)
 
 
 

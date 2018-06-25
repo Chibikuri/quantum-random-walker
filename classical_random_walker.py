@@ -27,7 +27,7 @@ class cal_random:
         #plt.plot(x_data, y_data, color = "blue")
         #plt.plot([0, n], [0, 0], linestyle="dashed")
         #plt.show()
-        return y_data
+        return np.mean(y_data)
 
 
 
